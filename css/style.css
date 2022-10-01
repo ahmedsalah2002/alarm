@@ -1,0 +1,78 @@
+:root {
+  --main-color:#2192FF;
+  }
+  body {
+    font-family: "Roboto", sans-serif;
+    user-select: none;
+    background-color: var(--main-color) !important;
+  }
+  .cont{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 40%;
+  }
+  .image{
+    margin: auto;
+  }
+  .clock{
+    font-size: 2em;
+    font-weight: 600;
+    width: 100%;
+  }
+  .change{
+    display: flex;
+    justify-content: space-between;
+  }
+  .change select{
+    padding: 5px 0;
+    text-align: center;
+    width: calc(100% / 4);
+    border: 2px solid black;
+    font-weight: 600;
+    
+  }
+  .button{
+    cursor: pointer;
+    text-align: center;
+    padding: 10px 70px;
+    background-color: var(--main-color);
+    color: white;
+    width: fit-content;
+    margin: auto;
+    font-size: 1.3em;
+    border-radius: 10px;
+
+  }
+
+
+  @media (max-width:991px) {
+    .cont{
+      width: 60%;
+    }
+    
+  }
+  @media (max-width:767px) and (max-width:990px) {
+    .cont{
+      width: 80%;
+    }
+    
+  }
+  @media (min-width:300px) and (max-width:450px) {
+    .cont{
+      width: 90%;
+    }
+    
+  }
+  @media (min-width:250px) and (max-width:300px) {
+    .cont{
+      width: 95%;
+      font-size: 14px;
+    }
+    
+  }
